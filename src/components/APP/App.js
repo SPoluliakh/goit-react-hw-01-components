@@ -1,6 +1,5 @@
 import Profile from '../Profile/Profile';
 import user from '../../../src/user.json';
-import './App.styled.js';
 
 function App() {
   return (
