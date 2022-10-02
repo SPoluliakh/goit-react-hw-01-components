@@ -1,18 +1,5 @@
 import styled from 'styled-components';
 
-export const ProfileWrap = styled.div`
-  background-color: ${props => props.theme.colors.profile};
-  width: 360px;
-  padding-top: ${props => props.theme.space[3]}px;
-  margin-top: ${props => props.theme.space[6]}px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: 10px;
-`;
-
 export const Image = styled.img`
   width: 300px;
 `;
@@ -43,7 +30,7 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  flex-basis: 33.33%;
+  flex-basis: calc(100% / 3);
   display: flex;
   flex-direction: column;
   align-items: center;

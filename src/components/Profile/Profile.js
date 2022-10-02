@@ -1,20 +1,26 @@
 import PropTypes from 'prop-types';
-import {
-  ProfileWrap,
-  Image,
-  Text,
-  InnerWrap,
-  List,
-  ListItem,
-} from './Profile.styled';
+import defaultFoto from '../../components/avatar.png';
+import { Box } from '../Box';
+import { Image, Text, InnerWrap, List, ListItem } from './Profile.styled';
 
-const Profile = ({ username, tag, location, avatar, stats }) => {
+const Profile = ({ username, tag, location, avatar = defaultFoto, stats }) => {
   return (
-    <ProfileWrap>
+    <Box
+      bg="profile"
+      width="360px"
+      pt={3}
+      mt={5}
+      ml="auto"
+      mr="auto"
+      display="flex"
+      flexDirection="column"
+      justifyContent="space-between"
+      borderRadius="10px"
+    >
       <InnerWrap>
-        <Image src={avatar} alt={username} />
+        <Image src={avatar ?? defaultFoto} alt={username} />
         <Text firstLastName>{username}</Text>
-        <Text>{tag}</Text>
+        <Text>@{tag}</Text>
         <Text>{location}</Text>
       </InnerWrap>
 
@@ -32,7 +38,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
           <span>{stats.likes}</span>
         </ListItem>
       </List>
-    </ProfileWrap>
+    </Box>
   );
 };
 export default Profile;

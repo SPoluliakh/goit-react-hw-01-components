@@ -1,4 +1,4 @@
-export const theme = {
+export const theme = Object.freeze({
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
     body: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
@@ -38,4 +38,4 @@ export const theme = {
     none: 'none',
     normal: '1px dashed grey',
   },
-};
+});
