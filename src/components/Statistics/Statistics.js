@@ -41,17 +41,6 @@ const Statistics = ({ title, stats }) => {
   );
 };
 
-{
-  /* <StatsList>
-  {stats.map(stat => (
-    <StatsListItem key={stat.id}>
-      <span>{stat.label}</span>
-      <span>{stat.percentage}%</span>
-    </StatsListItem>
-  ))}
-</StatsList>; */
-}
-
 Statistics.prototype = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(

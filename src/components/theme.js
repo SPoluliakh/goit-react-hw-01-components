@@ -32,6 +32,8 @@ export const theme = Object.freeze({
     profile: 'yellow',
     profileList: 'rgba(255, 213, 0, 0.73)',
     statsTitle: '#00000099',
+    online: 'green',
+    offline: 'red',
   },
   radii: {
     none: '0',
