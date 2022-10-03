@@ -9,6 +9,7 @@ export const theme = Object.freeze({
     xs: 12,
     s: 14,
     m: 16,
+    ml: 24,
     l: 32,
     xl: 64,
   },
@@ -23,19 +24,25 @@ export const theme = Object.freeze({
   },
   colors: {
     text: '#000',
+    statsText: '#ff9',
     background: '#fff',
     primary: '#07c',
     secondary: '#30c',
     muted: '#f6f6f6',
     profile: 'yellow',
+    profileList: 'rgba(255, 213, 0, 0.73)',
+    statsTitle: '#00000099',
   },
   radii: {
     none: '0',
-    normal: '4px',
+    normal: '10px',
     round: '50%',
   },
   borders: {
     none: 'none',
     normal: '1px dashed grey',
+  },
+  shadows: {
+    boxShadow: '#ff9 0px 0px 20px',
   },
 });

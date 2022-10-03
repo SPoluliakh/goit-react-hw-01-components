@@ -6,28 +6,51 @@ const Statistics = ({ title, stats }) => {
   return (
     <Box
       as="section"
-      bg="background"
-      width="346px"
-      borderRadius="10px"
+      bg="profile"
+      width="360px"
+      borderRadius="normal"
       ml="auto"
       mr="auto"
       display="flex"
       flexDirection="column"
       justifyContent="space-between"
-      p={2}
+      pb={0}
+      boxShadow="boxShadow"
     >
       {title && <StatsTitle> {title} </StatsTitle>}
-      <StatsList>
-        {stats.map(stat => (
-          <StatsListItem key={stat.id}>
-            <span>{stat.label}</span>
-            <span>{stat.percentage}</span>
-          </StatsListItem>
-        ))}
-      </StatsList>
+      {title ? (
+        <StatsList>
+          {stats.map(stat => (
+            <StatsListItem key={stat.id}>
+              <span>{stat.label}</span>
+              <span>{stat.percentage}%</span>
+            </StatsListItem>
+          ))}
+        </StatsList>
+      ) : (
+        <StatsList noTitle>
+          {stats.map(stat => (
+            <StatsListItem noTitle key={stat.id}>
+              <span>{stat.label}</span>
+              <span>{stat.percentage}%</span>
+            </StatsListItem>
+          ))}
+        </StatsList>
+      )}
     </Box>
   );
 };
+
+{
+  /* <StatsList>
+  {stats.map(stat => (
+    <StatsListItem key={stat.id}>
+      <span>{stat.label}</span>
+      <span>{stat.percentage}%</span>
+    </StatsListItem>
+  ))}
+</StatsList>; */
+}
 
 Statistics.prototype = {
   title: PropTypes.string,

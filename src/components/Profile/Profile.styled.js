@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const Image = styled.img`
-  width: 300px;
+  width: 200px;
+  border-radius: ${props => props.theme.radii.round};
+  background-color: ${props => props.theme.colors.profileList};
 `;
 
 export const Text = styled.p`
@@ -23,7 +25,7 @@ export const List = styled.ul`
   display: flex;
   align-items: center;
   margin: ${props => props.theme.space[0]}px;
-  background-color: rgba(255, 213, 0, 0.73);
+  background-color: ${props => props.theme.colors.profileList};
   margin-top: ${props => props.theme.space[3]}px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;

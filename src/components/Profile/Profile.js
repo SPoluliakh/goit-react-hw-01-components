@@ -15,7 +15,8 @@ const Profile = ({ username, tag, location, avatar = defaultFoto, stats }) => {
       display="flex"
       flexDirection="column"
       justifyContent="space-between"
-      borderRadius="10px"
+      borderRadius="normal"
+      boxShadow="boxShadow"
     >
       <InnerWrap>
         <Image src={avatar ?? defaultFoto} alt={username} />
