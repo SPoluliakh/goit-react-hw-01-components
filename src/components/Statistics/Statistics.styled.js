@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { getRandomHexColor } from '../../getRandomColor';
 
 export const StatsTitle = styled.h2`
+  font-family: ${props => props.theme.fonts.table};
   margin: ${props => props.theme.space[0]};
   margin-left: auto;
   margin-right: auto;

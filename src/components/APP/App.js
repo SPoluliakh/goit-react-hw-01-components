@@ -4,6 +4,8 @@ import data from '../../../src/data.json';
 import Statistics from '../Statistics/Statistics';
 import friends from '../../../src/friends.json';
 import Friends from '../FriendList/FriendList';
+import TransactionHistory from '../TransactionHistory/TransactionHistory';
+import transactions from '../../../src/transactions.json';
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
       />
       <Statistics title="Upload stats" stats={data} />
       <Friends friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 }

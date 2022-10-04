@@ -28,6 +28,7 @@ export const FriendsFoto = styled.img`
 `;
 
 export const FriendsName = styled.p`
+  font-family: ${props => props.theme.fonts.table};
   margin-left: ${props => props.theme.space[3]}px;
   font-weight: ${props => props.theme.fontWeights.medium};
   font-size: ${props => props.theme.fontSizes.m}px;

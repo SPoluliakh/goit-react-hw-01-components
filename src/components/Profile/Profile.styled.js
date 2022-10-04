@@ -7,6 +7,7 @@ export const Image = styled.img`
 `;
 
 export const Text = styled.p`
+  font-family: ${props => props.theme.fonts.table};
   margin-top: ${props => props.theme.space[2]}px;
   margin-bottom: ${props => props.theme.space[0]}px;
   color: ${props => props.theme.colors.text};
@@ -32,6 +33,7 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
+  font-family: ${props => props.theme.fonts.table};
   flex-basis: calc(100% / 3);
   display: flex;
   flex-direction: column;
