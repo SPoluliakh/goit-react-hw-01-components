@@ -2,9 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './components/APP/App';
-import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from 'styled-components';
-import { theme } from './components/theme';
+import { theme } from './Utils/theme';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,4 +13,3 @@ root.render(
     </ThemeProvider>
   </React.StrictMode>
 );
-reportWebVitals();

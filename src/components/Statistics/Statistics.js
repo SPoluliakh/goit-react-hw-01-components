@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { StatsTitle, StatsList, StatsListItem } from './Statistics.styled';
-import { Box } from '../Box';
+import { Box } from '../../Utils/Box';
 
 const Statistics = ({ title, stats }) => {
   return (
@@ -41,7 +41,7 @@ const Statistics = ({ title, stats }) => {
   );
 };
 
-Statistics.prototype = {
+Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({

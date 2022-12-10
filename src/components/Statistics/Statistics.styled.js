@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { getRandomHexColor } from '../../getRandomColor';
+import { getRandomHexColor } from '../../Utils/getRandomColor';
 
 export const StatsTitle = styled.h2`
   font-family: ${props => props.theme.fonts.table};

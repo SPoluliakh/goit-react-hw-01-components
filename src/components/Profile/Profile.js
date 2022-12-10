@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import defaultFoto from '../../components/avatar.png';
-import { Box } from '../Box';
+import defaultFoto from '../../Utils/avatar.png';
+import { Box } from '../../Utils/Box';
 import { Image, Text, InnerWrap, List, ListItem } from './Profile.styled';
 
 const Profile = ({ username, tag, location, avatar = defaultFoto, stats }) => {
