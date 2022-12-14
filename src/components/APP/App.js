@@ -1,11 +1,11 @@
 import Profile from '../Profile';
-import user from '../../../src/user.json';
-import data from '../../../src/data.json';
+import user from '../../FakeApi/user.json';
+import data from '../../FakeApi/data.json';
 import Statistics from '../Statistics';
-import friends from '../../../src/friends.json';
+import friends from '../../FakeApi/friends.json';
 import Friends from '../FriendList';
 import TransactionHistory from '../TransactionHistory';
-import transactions from '../../../src/transactions.json';
+import transactions from '../../FakeApi/transactions.json';
 
 function App() {
   return (

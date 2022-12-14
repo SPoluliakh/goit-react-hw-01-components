@@ -18,25 +18,15 @@ const Statistics = ({ title, stats }) => {
       boxShadow="boxShadow"
     >
       {title && <StatsTitle> {title} </StatsTitle>}
-      {title ? (
-        <StatsList>
-          {stats.map(stat => (
-            <StatsListItem key={stat.id}>
-              <span>{stat.label}</span>
-              <span>{stat.percentage}%</span>
-            </StatsListItem>
-          ))}
-        </StatsList>
-      ) : (
-        <StatsList noTitle>
-          {stats.map(stat => (
-            <StatsListItem noTitle key={stat.id}>
-              <span>{stat.label}</span>
-              <span>{stat.percentage}%</span>
-            </StatsListItem>
-          ))}
-        </StatsList>
-      )}
+
+      <StatsList>
+        {stats.map(stat => (
+          <StatsListItem key={stat.id}>
+            <span>{stat.label}</span>
+            <span>{stat.percentage}%</span>
+          </StatsListItem>
+        ))}
+      </StatsList>
     </Box>
   );
 };

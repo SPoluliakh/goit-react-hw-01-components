@@ -17,7 +17,7 @@ const Friends = ({ friends }) => {
   );
 };
 
-Friends.prototype = {
+Friends.propTypes = {
   friends: PropTypes.arrayOf(PropTypes.object.isRequired),
 };
 
